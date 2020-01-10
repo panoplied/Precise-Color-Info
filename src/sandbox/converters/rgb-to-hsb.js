@@ -31,9 +31,8 @@ function rgbToHsb(color) {
 
         if (h < 0) {
             h += 1.0;
-        }
-        if (h > 0) {
-            h += 1.0;
+        } else if (h > 0) {
+            h -= 1.0;
         }
 
     }

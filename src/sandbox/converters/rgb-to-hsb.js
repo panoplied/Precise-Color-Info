@@ -29,12 +29,14 @@ function rgbToHsb(color) {
             h = 2/3 + delG - delR;
         }
 
+        console.log("DEBUG H", h);
+
         if (h < 0) {
             h += 1.0;
-        } else if (h > 0) {
+        }
+        if (h > 1) {
             h -= 1.0;
         }
-
     }
 
     // color["h"] = h;
